@@ -1,0 +1,628 @@
+{
+	"info": {
+		"_postman_id": "f0dc5b8f-cbd0-4397-bea9-b2c336f85026",
+		"name": "Proyecto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Usuario",
+							"value": "Myfrend",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registrar",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/obtenerUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhNzc5YTYyM2U5ZDMzZDRjMzYwMjMiLCJVc3VhcmlvIjoiQWRtaW4iLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MTQ0NDkzOTIsImVweCI6MTYxNDc5NDk5Mn0.rYWPzITkjcFF5bAuJbqf26oyMTGfqoIqVGYxMXAU1gA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerUsuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/obtenerUsuarioID:iDUsuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhNzc5YTYyM2U5ZDMzZDRjMzYwMjMiLCJVc3VhcmlvIjoiQWRtaW4iLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MTQ0NDkzOTIsImVweCI6MTYxNDc5NDk5Mn0.rYWPzITkjcFF5bAuJbqf26oyMTGfqoIqVGYxMXAU1gA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "iDUsuario",
+							"value": "6025b55ea1f8165938bf9eff",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerUsuarioID/:iDUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerUsuarioID",
+						":iDUsuario"
+					],
+					"variable": [
+						{
+							"key": "iDUsuario",
+							"value": "603a834193da554618f2f4ad"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Usuario",
+							"value": "Eduardo",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/editarUsuario/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhNzc5YTYyM2U5ZDMzZDRjMzYwMjMiLCJVc3VhcmlvIjoiQWRtaW4iLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MTQ0NDkzOTIsImVweCI6MTYxNDc5NDk5Mn0.rYWPzITkjcFF5bAuJbqf26oyMTGfqoIqVGYxMXAU1gA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Usuario",
+							"value": "Kinal",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarUsuario/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarUsuario",
+						":id"
+					],
+					"query": [
+						{
+							"key": "nombr",
+							"value": "otro",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603a834193da554618f2f4ad"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/ingresarEmpleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhODM0MTkzZGE1NTQ2MThmMmY0YWQiLCJVc3VhcmlvIjoiS2luYWwiLCJyb2wiOiJST0xfVVNVQVJJTyIsImlhdCI6MTYxNDQ0OTIyNCwiZXB4IjoxNjE0Nzk0ODI0fQ.hsd30Koj_tSLFB2OyTyW8jxXxRuJ-QVdrrSgCa_aaSs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Nombre",
+							"value": "Maria",
+							"type": "text"
+						},
+						{
+							"key": "Puesto",
+							"value": "Laboratorio",
+							"type": "text"
+						},
+						{
+							"key": "Departamento",
+							"value": "Geoinvestigacion",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/ingresarEmpleado",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ingresarEmpleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api//obtenerEmpleados",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhNzc5YTYyM2U5ZDMzZDRjMzYwMjMiLCJVc3VhcmlvIjoiQWRtaW4iLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MTQ0NDkzOTIsImVweCI6MTYxNDc5NDk5Mn0.rYWPzITkjcFF5bAuJbqf26oyMTGfqoIqVGYxMXAU1gA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api//obtenerEmpleados",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"",
+						"obtenerEmpleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/obterenEmpleadosID:EmpleadosID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhODM0MTkzZGE1NTQ2MThmMmY0YWQiLCJVc3VhcmlvIjoiS2luYWwiLCJyb2wiOiJST0xfVVNVQVJJTyIsImlhdCI6MTYxNDQ0OTIyNCwiZXB4IjoxNjE0Nzk0ODI0fQ.hsd30Koj_tSLFB2OyTyW8jxXxRuJ-QVdrrSgCa_aaSs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EmpleadoID",
+							"value": "60331b3057a19d4a9cd799d6",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerEmpleadosID/:EmpleadoID",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEmpleadosID",
+						":EmpleadoID"
+					],
+					"variable": [
+						{
+							"key": "EmpleadoID",
+							"value": "603aa73f795aa82a446a7448"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api//obtenerEmpleadoNombre:EmpleadoNombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhNzc5YTYyM2U5ZDMzZDRjMzYwMjMiLCJVc3VhcmlvIjoiQWRtaW4iLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MTQ0NDkzOTIsImVweCI6MTYxNDc5NDk5Mn0.rYWPzITkjcFF5bAuJbqf26oyMTGfqoIqVGYxMXAU1gA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api//obtenerEmpleadoNombre/:EmpleadoNombre",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"",
+						"obtenerEmpleadoNombre",
+						":EmpleadoNombre"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "EmpleadoNombre",
+							"value": "Juan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/obtenerEmpleadosPuesto:EmpleadoPuesto",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhNzc5YTYyM2U5ZDMzZDRjMzYwMjMiLCJVc3VhcmlvIjoiQWRtaW4iLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MTQ0NDkzOTIsImVweCI6MTYxNDc5NDk5Mn0.rYWPzITkjcFF5bAuJbqf26oyMTGfqoIqVGYxMXAU1gA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EmpleadoPuesto",
+							"value": "Aministrados",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerEmpleadosPuesto/:EmpleadoPuesto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEmpleadosPuesto",
+						":EmpleadoPuesto"
+					],
+					"query": [
+						{
+							"key": "EmpleadoPuesto",
+							"value": "Aministrados",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "EmpleadoPuesto",
+							"value": "Laboratorio"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/obtenerEmpleadosDepartamento:EmpleadoDepartamento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhODM0MTkzZGE1NTQ2MThmMmY0YWQiLCJVc3VhcmlvIjoiS2luYWwiLCJyb2wiOiJST0xfVVNVQVJJTyIsImlhdCI6MTYxNDQ0OTIyNCwiZXB4IjoxNjE0Nzk0ODI0fQ.hsd30Koj_tSLFB2OyTyW8jxXxRuJ-QVdrrSgCa_aaSs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EmpleadoDepartamentos",
+							"value": "Investigacion",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerEmpleadosDepartamento/:EmpleadoDepartamento",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEmpleadosDepartamento",
+						":EmpleadoDepartamento"
+					],
+					"variable": [
+						{
+							"key": "EmpleadoDepartamento",
+							"value": "Investigacion"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api//editarEmpleado/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhNzc5YTYyM2U5ZDMzZDRjMzYwMjMiLCJVc3VhcmlvIjoiQWRtaW4iLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MTQ0NDkzOTIsImVweCI6MTYxNDc5NDk5Mn0.rYWPzITkjcFF5bAuJbqf26oyMTGfqoIqVGYxMXAU1gA",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Nombre",
+							"value": "pedro",
+							"type": "text"
+						},
+						{
+							"key": "Puesto",
+							"value": "Laboratorio",
+							"type": "text"
+						},
+						{
+							"key": "Departamento",
+							"value": "Geoinvestigacio",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api//editarEmpleado/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"",
+						"editarEmpleado",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603aaa8e3cf46d2e38482204"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api//ImprimirPdf",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhODM0MTkzZGE1NTQ2MThmMmY0YWQiLCJVc3VhcmlvIjoiS2luYWwiLCJyb2wiOiJST0xfVVNVQVJJTyIsImlhdCI6MTYxNDQ0OTIyNCwiZXB4IjoxNjE0Nzk0ODI0fQ.hsd30Koj_tSLFB2OyTyW8jxXxRuJ-QVdrrSgCa_aaSs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api//ImprimirPdf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"",
+						"ImprimirPdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/eliminarUsuario/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhODU4NTkzZGE1NTQ2MThmMmY0YWYiLCJVc3VhcmlvIjoiSmVmcnkiLCJyb2wiOiJST0xfVVNVQVJJTyIsImlhdCI6MTYxNDQ0OTMzMCwiZXB4IjoxNjE0Nzk0OTMwfQ.9XiQLkomYTzDm3PELJjNOIFKXzdsh7H0sSs_pBzz5Mw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarUsuario/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarUsuario",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603aa43caa066d29e823a19a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api//eliminarEmpleado/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhODU4NTkzZGE1NTQ2MThmMmY0YWYiLCJVc3VhcmlvIjoiSmVmcnkiLCJyb2wiOiJST0xfVVNVQVJJTyIsImlhdCI6MTYxNDQ0OTMzMCwiZXB4IjoxNjE0Nzk0OTMwfQ.9XiQLkomYTzDm3PELJjNOIFKXzdsh7H0sSs_pBzz5Mw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api//eliminarEmpleado/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"",
+						"eliminarEmpleado",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603aa52c89bea74a78b252a0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
